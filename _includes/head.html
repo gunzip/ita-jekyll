@@ -2,7 +2,7 @@
 <!--[if IE 8]><html lang="{{ page.lang | default: site.lang | default: "en" }}"><![endif]-->
 <!--[if IE 9]><html lang="{{ page.lang | default: site.lang | default: "en" }}"><![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
 <!--<![endif]-->
 
 <head>
@@ -16,7 +16,7 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml " | relative_url }}">
 
   <link rel="preload" href="{{ '/assets/IWT.min.js' | relative_url }}" as="script">
 
@@ -44,7 +44,5 @@
 
   <script src="{{ '/assets/vendor/jquery.min.js' | relative_url }}"></script>
 
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
+  {% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
 </head>
