@@ -1,0 +1,15 @@
+- text: Subnav 1
+  url: /
+- text: Subnav 1
+  url: '#'
+  subitems:
+    - text: Subnav 1 (sub)
+      url: '#'
+      subitems:
+        - text: Subnav 1 (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
+- text: Second subnav
+  url: '#'
+  subitems:
+    - text: Second subnav (sub)
+      url: /second-menu/second-menu-sub/

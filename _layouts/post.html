@@ -1,18 +1,36 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting" class="Prose u-layout-prose">
 
-  <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+<div class="Grid Grid--withGutter">
+  <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
 
-  <div itemprop="articleBody">
-    {{ content }}
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="u-layout-prose">
+
+      <header class="Prose">
+        <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+        <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{%
+          endif %}</p>
+      </header>
+
+      <div itemprop="articleBody" class="Prose">
+        {{ content }}
+      </div>
+
+      {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+    </article>
+
   </div>
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-</article>
+  <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12">
+    <div class="u-cf u-padding-bottom-xxl">
+      {% include share.html %}
+    </div>
+
+    <div class="u-sizeFull u-md-size11of12 u-lg-size11of12" id="subnav">
+
+      {% include linklist.html items=site.data.subnav %}
+
+    </div>
+  </div>
+</div>
