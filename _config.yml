@@ -35,4 +35,5 @@ exclude:
 
 # Custom vars
 css_theme: t-Pac
- 
+owner: Governo Italiano
+logo: http://designer.italia.it/images/loghi/logo-it.svg

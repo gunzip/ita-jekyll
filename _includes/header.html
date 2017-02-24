@@ -1,7 +1,78 @@
-<header role="banner">
-  <div>
+<header class="Header {% if include.isFixed %}Headroom--fixed js-Headroom{% endif %} u-hiddenPrint">
 
-    <a href="{{ " / " | relative_url}}">{{ site.title | escape }}</a>
+  <div class="Header-banner">
+    <div class="Header-owner Headroom-hideme">
+      <a href=""><span>{{ site.owner }}</span></a>
+      {% include lang_switch.html %}
+    </div>
+  </div>
+
+  <div class="Header-navbar Grid Grid--alignMiddle">
+    <div class="Header-toggle Grid-cell">
+      <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock
+        {% if include.hideOnDesktop %}u-lg-hidden u-md-hidden{% endif %}" href="#menu"
+        aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
+        <span class="Hamburger-toggle" role="presentation"></span>
+        <span class="Header-toggleText" role="presentation">Menu</span>
+      </a>
+    </div>
+
+    <div class="Header-logo Grid-cell" aria-hidden="true">
+      <a href="" tabindex="-1">
+        <img src="{{ site.logo }}" alt="">
+      </a>
+    </div>
+
+    <div class="Header-title Grid-cell">
+      <h1 class="Header-titleLink">
+        <a href="{{ " / " | relative_url}}">{{ site.title | escape }}<br>
+          <small>{{ site.subtitle }}</small>
+        </a>
+      </h1>
+    </div>
+
+    <div class="Header-searchTrigger Grid-cell">
+      <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search"
+        title="attiva il form di ricerca" aria-label="attiva il form di ricerca" aria-hidden="false">
+      </button>
+      <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden"
+        title="disattiva il form di ricerca" aria-label="disattiva il form di ricerca" aria-hidden="true">
+      </button>
+    </div>
+
+    <div class="Header-utils Grid-cell">
+      <div class="Header-social Headroom-hideme">
+        <p>Seguici su:</p>
+        <ul class="Header-socialIcons">
+          <li><a href="" title="Facebook"><span class="Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
+          <li><a href="" title="Twitter"><span class="Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
+          <li><a href="" title="Youtube"><span class="Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
+        </ul>
+      </div>
+      <div class="Header-search" id="header-search">
+        {% include search_form.html %}
+      </div>
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+  {% if include.menu or include.megamenu %}
+  <div class="Headroom-hideme u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block">
+    {% if include.megamenu %}
+      <nav class="Megamenu Megamenu--default js-megamenu" data-rel=".Offcanvas .Treeview"></nav>
+    {% else %}
+      <nav class="Megamenu Megamenu--default">
+        <ul class="Megamenu-list">
+          {% for item in include.menuItems %}
+            <li class="Megamenu-item"><a href="">{{ item }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+  </div>
+  {% endif %}
+
+</header>
 
     <nav>
       <div>

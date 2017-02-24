@@ -1,11 +1,56 @@
-<footer>
-  <h2>{{ site.title | escape }}</h2>
-  <p>{{ site.description | escape }}</p>
-  <p>
-    {% if site.author %} {{ site.author | escape }} {% else %} {{ site.title | escape }} {% endif %} {% if site.email %}
-    <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-    {% endif %}
-  </p>
+<footer class="Footer u-padding-all-s">
+  <div class="u-layout-medium u-layoutCenter">
+
+  <div class="u-cf">
+    <img class="Footer-logo" src="{{ site.logo }}" alt="">
+    <p class="Footer-siteName">
+      {{ site.title | escape }}
+    </p>
+  </div>
+
+  <div class="Grid Grid--withGutter">
+
+    <!-- <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+      <h2 class="Footer-blockTitle">Contatti</h2>
+      <div class="Footer-subBlock">
+        <h3 class="Footer-subTitle">Recapiti</h3>
+        <address>
+          Via {{ __WORDS__[i] }}<br>
+          {{ __WORDS__[i] }}<br>
+          Tel. (+00) 00.0000.0000
+        </address>
+      </div>
+    </div> -->
+
+    <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+      <h2 class="Footer-blockTitle">Contatti</h2>
+      <div class="Footer-subBlock">
+        <h3 class="Footer-subTitle">Indirizzo PEC</h3>
+        <p><a href="">{{ site.author }}</a></p>
+        <p><a href="">{{ site.email }}</a></p>
+      </div>
+    </div>
+
+    <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+      <h2 class="Footer-blockTitle">Seguici su</h2>
+      <div class="Footer-subBlock">
+        <ul class="Footer-socialIcons">
+          <li><a href=""><span class="Icon Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
+          <li><a href=""><span class="Icon Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
+          <li><a href=""><span class="Icon Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <ul class="Footer-links u-cf">
+    <li><a href="" title="Privacy policy">Privacy</a></li>
+    <li><a href="" title="Note legali">Note legali</a></li>
+    <li><a href="" title="Dati monitoraggio sito">Contatti</a></li>
+  </ul>
+
+  </div>
 </footer>
 
 {% include scripts.html %}

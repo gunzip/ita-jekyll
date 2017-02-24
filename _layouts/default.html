@@ -1,6 +1,10 @@
 {% include head.html %}
-{% include header.html %}
+{% include skiplinks.html %}
+{% include header.html hideOnDesktop='true' megamenu='true' %}
+{% include cookiebar.html %}
+{% include offcanvas.html %}
 
 {{ content }}
 
+{% include scrolltop.html %}
 {% include footer.html %}
