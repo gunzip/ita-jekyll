@@ -1,0 +1,15 @@
+- text: Home
+  url: /
+- text: First menu
+  url: '#'
+  subitems:
+    - text: First menu (sub)
+      url: '#'
+      subitems:
+        - text: First menu (sub-sub)
+          url: /first-menu/first-menu-sub/first-menu-sub-sub/
+- text: Second menu
+  url: '#'
+  subitems:
+    - text: Second menu (sub)
+      url: /second-menu/second-menu-sub/

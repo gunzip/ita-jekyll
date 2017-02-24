@@ -918,7 +918,7 @@ ol, ul {
  * Display-type utilities
  */
 
-.u-block, .Form-input.Form-input:focus + [role="tooltip"], .Forward--floating, .Accordion-header, .Accordion-link, .Header-utils, .Header-search.is-active, .Leads-link, .Linklist li, .Linklist-link, .Linklist a, .Megamenu-list, .Megamenu-subnavGroup > li, .no-js .Offcanvas:target, .Treeview-handler {
+.u-block, .Form-input.Form-input:focus + [role="tooltip"], .Forward--floating, .Accordion-header, .Accordion-link, .Header-utils, .Header-search.is-active, .Leads-link, .Linklist li, .Linklist-link, .Linklist a, .Megamenu-list, .Megamenu-subnavGroup > li, .no-js .Offcanvas:target {
   display: block !important;
 }
 
@@ -1933,7 +1933,7 @@ ol, ul {
 
 /** @define utilities */
 
-.u-posFit, .u-posAbsoluteCenter, .u-posAbsolute, .Form-field--withPlaceholder .Form-label, .Form-input.Form-input:focus + [role="tooltip"], .Forward--absolute, .Megamenu.is-ready .Megamenu-subnav, .Megamenu--default .Megamenu-list > li > a[aria-expanded=true]:after, .Megamenu--default .Megamenu-list > li > a[aria-expanded=false]:after, .Megamenu--default .Megamenu-area, .Megamenu--default .Megamenu-close, .Treeview-handler {
+.u-posFit, .u-posAbsoluteCenter, .u-posAbsolute, .Form-field--withPlaceholder .Form-label, .Form-input.Form-input:focus + [role="tooltip"], .Forward--absolute, .Megamenu.is-ready .Megamenu-subnav, .Megamenu--default .Megamenu-list > li > a[aria-expanded=true]:after, .Megamenu--default .Megamenu-list > li > a[aria-expanded=false]:after, .Megamenu--default .Megamenu-area, .Megamenu--default .Megamenu-close {
   position: absolute !important;
 }
 
@@ -1969,7 +1969,7 @@ ol, ul {
   position: fixed !important;
 }
 
-.u-posRelative, .Form-field--withPlaceholder, .Hero, .Hero-content, .Megamenu-list, .Megamenu--default .Megamenu-item > a, .Megamenu--default .Megamenu-subnavGroup > li > a, .ScrollTop-icon, .Treeview-parent > a, .Share-reveal > a > span, .Share > ul > li > a, .Spid {
+.u-posRelative, .Form-field--withPlaceholder, .Hero, .Hero-content, .Megamenu-list, .Megamenu--default .Megamenu-item > a, .Megamenu--default .Megamenu-subnavGroup > li > a, .ScrollTop-icon, .Share-reveal > a > span, .Share > ul > li > a, .Spid {
   position: relative !important;
 }
 
@@ -5937,7 +5937,7 @@ ol, ul {
   z-index: 20;
 }
 
-.u-zindex-30, .Forward--absolute, .Treeview-handler {
+.u-zindex-30, .Forward--absolute {
   z-index: 30;
 }
 
@@ -8042,26 +8042,15 @@ option:hover {
 
 /** @define Treeview; weak; */
 
-.Treeview-handler {
-
+.Treeview [aria-expanded] > a {
   background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generated%20by%20IcoMoon.io%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%3Cpath%20d%3D%22M3.733%206.133l-3.733%203.733%2016%2016%2016-16-3.733-3.733-12.267%2012.267-12.267-12.267z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E');
-  background-position: center;
+  background-position: right 0.5em center;
   background-repeat: no-repeat;
-  background-size: 1em;
-  content: " ";
-  height: 100%;
-  max-width: 6em;
-  min-width: 4em;
-  right: 0;
-  top: 0;
-  width: 15%;
+  background-size: 0.8em;
+  padding-right: 1.8em;
 }
 
-.Treeview-handler--default {
-  border-left: 1px solid #ddd;
-}
-
-.Treeview [aria-expanded="true"] > a > .Treeview-handler {
+.Treeview [aria-expanded="true"] > a {
   background-image: url('data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generated%20by%20IcoMoon.io%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%0A%3Cpath%20d%3D%22M28.267%2025.867l3.733-3.733-16-16-16%2016%203.733%203.733%2012.267-12.267%2012.267%2012.267z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E');
 }
 
@@ -8073,9 +8062,10 @@ option:hover {
   cursor: pointer;
 }
 
-.Treeview-parent > a {
+/* FIXME: overrides focus unset */
 
-  padding-right: 15%;
+.Treeview li[tabindex]:focus {
+  outline: 3px solid #ff8c00 !important;
 }
 
 /*

@@ -1,50 +1,21 @@
-<ul class="Linklist Linklist--padded Treeview Treeview--default js-fr-treeview u-text-r-xs">
-  <li><a href="#">xxx</a>
-    <ul>
-      <li><a href="#">xxx</a></li>
-      <li><a href="#">xxx</a></li>
-      <li><a href="#">xxx</a>
-        <ul>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a>
-            <ul>
-              <li><a href="#">xxx</a></li>
-              <li><a href="#">xxx</a></li>
-              <li><a href="#">xxx</a></li>
-            </ul>
-          </li>
-          <li><a href="#">xxx</a></li>
-        </ul>
-      </li>
-      <li><a href="#">xxx</a></li>
-      <li><a href="#">xxx</a></li>
-    </ul>
-  </li>
-  <li><a href="#">xxx</a>
-    <ul>
-      <li><a href="#">xxx</a></li>
-      <li><a href="#">xxx</a></li>
-      <li><a href="#">xxx</a>
-        <ul>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-        </ul>
-      </li>
-      <li><a href="#">xxx</a></li>
-      <li><a href="#">xxx</a>
-        <ul>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-          <li><a href="#">xxx</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+{% if include.items %}
+  <ul>
+  {% assign items = include.items  %}
+{% else %}
+  <ul class="Linklist Linklist--padded Treeview Treeview--default js-fr-treeview u-text-r-xs">
+  {% assign items = site.data.menu_items  %}
+{% endif %}
+
+  {% assign navurl = page.url | remove: 'index.html' %}
+  {% for item in items %}
+  	<li>
+  		<a href="{{ item.url }}" {% if item.url == navurl %}class="u-textWeight-700"{% endif %}>
+				{{ item.text }}
+  		</a>
+      {% if item.subitems %}
+    		{% include menu.html items=item.subitems %}
+    	{% endif %}
+  	</li>
+  {% endfor %}
+
 </ul>

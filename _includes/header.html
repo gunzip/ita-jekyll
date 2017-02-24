@@ -63,8 +63,8 @@
     {% else %}
       <nav class="Megamenu Megamenu--default">
         <ul class="Megamenu-list">
-          {% for item in include.menuItems %}
-            <li class="Megamenu-item"><a href="">{{ item }}</a></li>
+          {% for item in site.data.menu_items %}
+            <li class="Megamenu-item"><a href="{{ item.url }}">{{ item.text }}</a></li>
           {% endfor %}
         </ul>
       </nav>
@@ -72,14 +72,11 @@
   </div>
   {% endif %}
 
-</header>
-
-    <nav>
+    <!-- <nav>
       <div>
         {% for my_page in site.pages %} {% if my_page.title %}
         <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a> {% endif %} {% endfor %}
       </div>
-    </nav>
+    </nav> -->
 
-  </div>
 </header>
