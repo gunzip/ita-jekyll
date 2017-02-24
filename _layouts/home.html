@@ -2,23 +2,24 @@
 layout: default
 ---
 
-<div class="Prose u-layout-medium u-layoutCenter">
+<div class="u-layout-medium u-layoutCenter">
 
-  <h1>Posts</h1>
-
+  <div class="Prose u-layout-prose">
+  <h1>Home</h1>
+  <p>
+    <p>In quis consequat amet est officia nostrud fugiat esse voluptate ex sint eu. Non deserunt adipisicing minim aliqua dolore deserunt ad aliquip occaecat esse pariatur pariatur culpa. Laborum nisi nostrud eiusmod ut labore ea ullamco deserunt sint cupidatat laboris tempor laboris aute. Sit labore fugiat laboris do voluptate amet veniam ipsum. Nisi aute irure magna fugiat nostrud culpa culpa excepteur eu nostrud officia aliqua ad proident consequat amet ad. Voluptate deserunt Lorem pariatur ut exercitation culpa elit id adipisicing sint occaecat ea consectetur adipisicing. Consectetur ad deserunt aliquip qui ipsum non ea tempor est proident fugiat ullamco eu sint.</p>
+    <p>Qui quis cupidatat commodo sunt nostrud sunt ullamco do culpa reprehenderit officia cillum sunt elit dolore. Adipisicing tempor eu aute qui labore do et ut adipisicing dolor culpa laborum nulla irure eiusmod. Exercitation esse cillum cillum nulla ea velit enim tempor cupidatat esse sit aliqua. Aliqua est consequat excepteur cupidatat sunt culpa sit duis fugiat non aliquip fugiat ea. Nulla duis nostrud officia mollit occaecat reprehenderit commodo exercitation et dolore quis enim ipsum ut esse. Deserunt anim consequat consequat sit incididunt aliquip exercitation amet ea do commodo reprehenderit aliquip commodo duis ipsum sit.</p>
+    </p>
+  </div>
   {{ content }}
 
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="Linklist Linklist--padded">
+      {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <p>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
