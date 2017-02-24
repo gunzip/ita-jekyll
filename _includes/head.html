@@ -18,7 +18,7 @@
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml " | relative_url }}">
 
-  <link rel="preload" href="{{ '/assets/IWT.min.js' | relative_url }}" as="script">
+  <link rel="preload" href="{{ '/assets/toolkit/IWT.min.js' | relative_url }}" as="script">
 
   <script type="text/javascript">
     WebFontConfig = {
@@ -37,12 +37,13 @@
   </script>
 
   <!-- include html5shim per Explorer 8 -->
-  <script src="{{ '/assets/vendor/modernizr.js' | relative_url }}"></script>
+  <script src="{{ '/assets/toolkit/vendor/modernizr.js' | relative_url }}"></script>
 
-  <link media="all" rel="stylesheet" href="{{ '/assets/vendor.css' | relative_url }}">
-  <link media="all" rel="stylesheet" href="{{ '/assets/build.css' | relative_url }}">
+  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/vendor.css' | relative_url }}">
+  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/build.css' | relative_url }}">
 
-  <script src="{{ '/assets/vendor/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/toolkit/vendor/jquery.min.js' | relative_url }}"></script>
 
   {% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
 </head>
+<body class="{{ site.css_theme }}">
