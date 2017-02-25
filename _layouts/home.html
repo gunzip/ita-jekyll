@@ -14,7 +14,7 @@ layout: default
   button='Call to action'
 %}
 
-<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-padding-r-left u-padding-r-right">
+<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-padding-left-xxs u-padding-right-xxs">
 
     <ul class="Linklist Linklist--padded">
       {% for post in site.posts %}
@@ -24,9 +24,9 @@ layout: default
       {% endfor %}
     </ul>
 
-    <section class="Grid Grid--withGutter u-padding-all-l">
+    <section class="Grid Grid--withGutter u-padding-r-all">
       {% for i in (1..3) %}
-      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
+      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
         {% include card.html
           title='Title'
           link='//example.com'
@@ -39,9 +39,9 @@ layout: default
       {% endfor %}
     </section>
 
-    <section class="Grid Grid--withGutter u-padding-all-l">
+    <section class="Grid Grid--withGutter u-padding-r-all">
       {% for i in (1..3) %}
-      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
+      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
         {% include card-gallery.html
           title='Title'
           link='//example.com'
