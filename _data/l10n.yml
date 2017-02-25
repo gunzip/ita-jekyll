@@ -4,21 +4,11 @@ it:
   t:
     desc: sito in italiano
     active_lang: lingua attiva
+    follow_us: seguici su
 en:
   code: eng
   name: english
   t:
     desc: website in english
     active_lang: current language
-de:
-  code: deu
-  name: deutsch
-  t:
-    desc: website in english
-    active_lang: current language
-es:
-  code: esp
-  name: español
-  t:
-    desc: website in english
-    active_lang: current language
+    follow_us: follow us

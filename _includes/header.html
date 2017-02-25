@@ -1,3 +1,9 @@
+{% if page.lang == site.lang %}
+  {% assign homepage_link = "/" %}
+{% else %}
+  {% assign homepage_link = "/" | append: page.lang %}
+{% endif %}
+
 <header class="Header {% if include.isFixed %}Headroom--fixed js-Headroom{% endif %} u-hiddenPrint">
 
   <div class="Header-banner">
@@ -25,7 +31,7 @@
 
     <div class="Header-title Grid-cell">
       <h1 class="Header-titleLink">
-        <a href="{{ "/" | relative_url}}">{{ site.title | escape }}<br>
+        <a href="{{ homepage_link | relative_url}}">{{ site.title | escape }}<br>
           <small>{{ site.subtitle }}</small>
         </a>
       </h1>
