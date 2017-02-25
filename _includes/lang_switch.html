@@ -1,6 +1,5 @@
 <div class="Header-languages">
 
-  {% assign active_lang = page.lang | default: site.lang | default: "en" %} {% assign t = site.data.l10n[active_lang] %}
   {% for lang in site.data.l10n limit:2 %}
   <a class="Header-language {% if active_lang == lang[0] %}is-active{% endif %} u-hidden u-md-inlineBlock u-lg-inlineBlock" href="{{ '/' | append: lang[0] }}" title="{{ lang[1].t.desc }}">
     <abbr title="{{ lang[1].name }}">{{ lang[1].code | upcase }}</abbr>

@@ -1,6 +1,3 @@
-{% assign active_lang = page.lang | default: site.lang | default: "en" %}
-{% assign t = site.data.l10n[active_lang].t %}
-
 <div id="cookie-bar" class="CookieBar js-CookieBar u-background-95 u-padding-r-all" aria-hidden="true">
   <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">
     {{ t.cookiebar_msg }}<br>

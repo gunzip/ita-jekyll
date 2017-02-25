@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html lang="{{ page.lang | default: site.lang | default: "en" }}" class="no-js"><![endif]-->
-<!--[if IE 9]><html lang="{{ page.lang | default: site.lang | default: "en" }}" class="no-js"><![endif]-->
+<!--[if IE 8]><html lang="{{ active_lang }}" class="no-js"><![endif]-->
+<!--[if IE 9]><html lang="{{ active_lang }}" class="no-js"><![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="no-js">
+<html lang="{{ active_lang }}" class="no-js">
 <!--<![endif]-->
 
 <head>
@@ -10,7 +10,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ t.site_title | default: site.title | escape }}{% endif %}</title>
 
   {% seo %}
 

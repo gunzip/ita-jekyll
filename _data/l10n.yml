@@ -8,6 +8,8 @@ it:
     cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
     cookiebar_accept: Accetto
     cookiebar_privacy_policy: Privacy policy
+    site_title: Il mio favoloso titolo del sito
+    site_subtitle: Il mio favoloso sottotitolo
 en:
   code: eng
   name: english
@@ -18,3 +20,5 @@ en:
     cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
     cookiebar_accept: Accept
     cookiebar_privacy_policy: Privacy policy
+    site_title: My awesome site title
+    site_subtitle: My awesome subtitle

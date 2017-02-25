@@ -31,8 +31,8 @@
 
     <div class="Header-title Grid-cell">
       <h1 class="Header-titleLink">
-        <a href="{{ homepage_link | relative_url}}">{{ site.title | escape }}<br>
-          <small>{{ site.subtitle }}</small>
+        <a href="{{ homepage_link | relative_url }}">{{ t.site_title }}<br>
+          <small>{{ t.site_subtitle | default: site.subtitle | escape }}</small>
         </a>
       </h1>
     </div>
