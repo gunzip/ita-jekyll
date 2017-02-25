@@ -2,15 +2,16 @@
 layout: default
 ---
 
-<div class="u-layout-medium u-layoutCenter">
+{{ content }}
 
-  <div class="Prose u-layout-prose">
-  <h1>Home</h1>
-  <p>
-    <p>In quis consequat amet est officia nostrud fugiat esse voluptate ex sint eu. Non deserunt adipisicing minim aliqua dolore deserunt ad aliquip occaecat esse pariatur pariatur culpa. Laborum nisi nostrud eiusmod ut labore ea ullamco deserunt sint cupidatat laboris tempor laboris aute. Sit labore fugiat laboris do voluptate amet veniam ipsum. Nisi aute irure magna fugiat nostrud culpa culpa excepteur eu nostrud officia aliqua ad proident consequat amet ad. Voluptate deserunt Lorem pariatur ut exercitation culpa elit id adipisicing sint occaecat ea consectetur adipisicing. Consectetur ad deserunt aliquip qui ipsum non ea tempor est proident fugiat ullamco eu sint.</p>
-  </div>
+{% include hero.html
+  text='Enim enim minim qui irure cillum qui esse enim occaecat in ex in sint voluptate nulla.'
+  category='Category.'
+  title='Irure et consectetur sunt ad ad ullamco ea quis.'
+  button='Call to action'
+%}
 
-  {{ content }}
+<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-padding-r-left u-padding-r-right">
 
     <ul class="Linklist Linklist--padded">
       {% for post in site.posts %}
@@ -50,6 +51,5 @@ layout: default
       </div>
       {% endfor %}
     </section>
-
 
 </div>
