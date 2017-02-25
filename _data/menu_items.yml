@@ -1,15 +1,15 @@
-- text: Home
+- text: Link 1
   url: /
-- text: First menu
-  url: '#'
+- text: Link 2
+  url: /
   subitems:
-    - text: First menu (sub)
-      url: '#'
-      subitems:
-        - text: First menu (sub-sub)
-          url: /first-menu/first-menu-sub/first-menu-sub-sub/
-- text: Second menu
-  url: '#'
-  subitems:
-    - text: Second menu (sub)
-      url: /second-menu/second-menu-sub/
+  - text: Link 2.1
+    url: /
+  - text: Link 2.2
+    url: /
+  - text: Link 2.3
+    url: /
+- text: Link 3
+  url: /
+- text: Link 4
+  url: /

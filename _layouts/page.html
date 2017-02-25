@@ -22,10 +22,8 @@ layout: default
 
       <div class="u-sizeFull u-md-size11of12 u-lg-size11of12" id="subnav">
 
-        {% for page in site.pages %} {{ page.url }} {% endfor %}
-
-        {% assign subnav = site.pages %}
-        {% include linklist.html items=subnav %}
+        {% assign subnav = site.data[page.subnav] %}
+        {% include linklist.html items=subnav dynamic=true %}
 
       </div>
     </div>

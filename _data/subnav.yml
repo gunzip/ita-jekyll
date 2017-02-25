@@ -1,15 +1,73 @@
-- text: Subnav 1
-  url: /
-- text: Subnav 1
-  url: '#'
+- text: Il progetto
+  url: /it/index/
+- text: Service design
+  url: /it/service-design/index/
   subitems:
-    - text: Subnav 1 (sub)
-      url: '#'
-      subitems:
-        - text: Subnav 1 (sub-sub)
-          url: /first-menu/first-menu-sub/first-menu-sub-sub/
-- text: Second subnav
-  url: '#'
+  - text: Strategie
+    url: /it/service-design/strategie/
+- text: Content design
+  url: /it/contenuti/index/
   subitems:
-    - text: Second subnav (sub)
-      url: /second-menu/second-menu-sub/
+  - text: Architettura dell'informazione
+    url: /it/infoarchitettura/index/
+- text: Visual design
+  url: /it/visual-design/index/
+  subitems:
+  - text: Griglie
+    url: /it/layout/griglie/
+  - text: Layout della homepage
+    url: /it/layout/homepage/
+  - text: Utilizzo di carousel
+    url: /it/layout/carousel/
+  - text: Layout
+    url: /it/layout/index/
+  - text: Mobile first
+    url: /it/layout/mobile-first/
+  - text: Bottoni
+    url: /it/visual-design/bottoni/
+  - text: Footer
+    url: /it/visual-design/footer/
+  - text: Form
+    url: /it/visual-design/form/
+  - text: Header
+    url: /it/visual-design/header/
+  - text: Iconografia
+    url: /it/visual-design/iconografia/
+  - text: Tipografia
+    url: /it/visual-design/tipografia/
+  - text: Colori
+    url: /it/colori/index/
+    subitems:
+    - text: Palette PAC
+      url: /it/colori/palette-pac/
+  - text: Componenti
+    url: /it/componenti/index/
+    subitems:
+    - text: SPID
+      url: /it/componenti/spid/index/
+    - text: SPID - icone
+      url: /it/componenti/spid/icone/
+    - text: SPID - loghi
+      url: /it/componenti/spid/loghi/
+    - text: SPID - altri elementi
+      url: /it/componenti/spid/toolkit-altri-elementi/
+    - text: SPID - identity provider
+      url: /it/componenti/spid/toolkit-identity-provider/
+    - text: SPID - service provider
+      url: /it/componenti/spid/toolkit-service-provider/
+- text: Usabilità
+  url: /it/usabilita/index/
+  subitems:
+  - text: Criteri di usabilità
+    url: /it/usabilita/criteri/
+  - text: Misurazione dell'usabilità
+    url: /it/usabilita/misurazione/
+- text: Accessibilita
+  url: /it/accessibilita/index/
+  subitems:
+  - text: Obiettivi di accessibilità
+    url: /it/accessibilita/obiettivi/
+- text: Compatibilità con i dispositivi
+  url: /it/dispositivi/
+- text: Glossario
+  url: /it/glossario/

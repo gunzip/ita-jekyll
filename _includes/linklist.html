@@ -3,7 +3,7 @@
 {% if include._internal %}
   <ul>
 {% else %}
-  <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs">
+  <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs {% if include.dynamic %}Treeview Treeview--default js-fr-treeview{% endif%}">
 {% endif %}
 
   {% assign navurl = page.url | remove: 'index.html' %}
