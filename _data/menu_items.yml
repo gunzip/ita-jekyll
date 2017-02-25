@@ -1,15 +1,15 @@
-- text: Link 1
+- title: Link 1
   url: /
-- text: Link 2
+- title: Link 2
   url: /
   subitems:
-  - text: Link 2.1
+  - title: Link 2.1
     url: /
-  - text: Link 2.2
+  - title: Link 2.2
     url: /
-  - text: Link 2.3
+  - title: Link 2.3
     url: /
-- text: Link 3
+- title: Link 3
   url: /
-- text: Link 4
+- title: Link 4
   url: /

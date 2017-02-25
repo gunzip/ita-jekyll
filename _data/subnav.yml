@@ -1,73 +1,73 @@
-- text: Il progetto
+- title: Il progetto
   url: /it/index/
-- text: Service design
+- title: Service design
   url: /it/service-design/index/
   subitems:
-  - text: Strategie
+  - title: Strategie
     url: /it/service-design/strategie/
-- text: Content design
+- title: Content design
   url: /it/contenuti/index/
   subitems:
-  - text: Architettura dell'informazione
+  - title: Architettura dell'informazione
     url: /it/infoarchitettura/index/
-- text: Visual design
+- title: Visual design
   url: /it/visual-design/index/
   subitems:
-  - text: Griglie
+  - title: Griglie
     url: /it/layout/griglie/
-  - text: Layout della homepage
+  - title: Layout della homepage
     url: /it/layout/homepage/
-  - text: Utilizzo di carousel
+  - title: Utilizzo di carousel
     url: /it/layout/carousel/
-  - text: Layout
+  - title: Layout
     url: /it/layout/index/
-  - text: Mobile first
+  - title: Mobile first
     url: /it/layout/mobile-first/
-  - text: Bottoni
+  - title: Bottoni
     url: /it/visual-design/bottoni/
-  - text: Footer
+  - title: Footer
     url: /it/visual-design/footer/
-  - text: Form
+  - title: Form
     url: /it/visual-design/form/
-  - text: Header
+  - title: Header
     url: /it/visual-design/header/
-  - text: Iconografia
+  - title: Iconografia
     url: /it/visual-design/iconografia/
-  - text: Tipografia
+  - title: Tipografia
     url: /it/visual-design/tipografia/
-  - text: Colori
+  - title: Colori
     url: /it/colori/index/
     subitems:
-    - text: Palette PAC
+    - title: Palette PAC
       url: /it/colori/palette-pac/
-  - text: Componenti
+  - title: Componenti
     url: /it/componenti/index/
     subitems:
-    - text: SPID
+    - title: SPID
       url: /it/componenti/spid/index/
-    - text: SPID - icone
+    - title: SPID - icone
       url: /it/componenti/spid/icone/
-    - text: SPID - loghi
+    - title: SPID - loghi
       url: /it/componenti/spid/loghi/
-    - text: SPID - altri elementi
+    - title: SPID - altri elementi
       url: /it/componenti/spid/toolkit-altri-elementi/
-    - text: SPID - identity provider
+    - title: SPID - identity provider
       url: /it/componenti/spid/toolkit-identity-provider/
-    - text: SPID - service provider
+    - title: SPID - service provider
       url: /it/componenti/spid/toolkit-service-provider/
-- text: Usabilità
+- title: Usabilità
   url: /it/usabilita/index/
   subitems:
-  - text: Criteri di usabilità
+  - title: Criteri di usabilità
     url: /it/usabilita/criteri/
-  - text: Misurazione dell'usabilità
+  - title: Misurazione dell'usabilità
     url: /it/usabilita/misurazione/
-- text: Accessibilita
+- title: Accessibilita
   url: /it/accessibilita/index/
   subitems:
-  - text: Obiettivi di accessibilità
+  - title: Obiettivi di accessibilità
     url: /it/accessibilita/obiettivi/
-- text: Compatibilità con i dispositivi
+- title: Compatibilità con i dispositivi
   url: /it/dispositivi/
-- text: Glossario
+- title: Glossario
   url: /it/glossario/

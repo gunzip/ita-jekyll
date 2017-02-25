@@ -10,7 +10,7 @@
   {% for item in items %}
   	<li>
   		<a href="{{ item.url }}" {% if item.url == navurl %}class="u-textWeight-700"{% endif %}>
-				{{ item.text }}
+				{{ item.title }}
   		</a>
       {% if item.subitems %}
     		{% include linklist.html items=item.subitems _internal=true %}
