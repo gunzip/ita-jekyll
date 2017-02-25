@@ -4,7 +4,7 @@
   <div class="u-cf">
     <img class="Footer-logo" src="{{ site.logo }}" alt="">
     <p class="Footer-siteName">
-      {{ t.footer_title | default: site.title | escape }}
+      {{ t.footer_title | default: t.site_title | default: site.title | escape }}
     </p>
   </div>
 
@@ -15,7 +15,9 @@
       <div class="Footer-subBlock">
         <h3 class="Footer-subTitle">{{ t.footer_address_sub | capitalize }}</h3>
         <address>
-          {{ site.data.contacts.address.value | capitalize }}
+          <span class="u-text-p">
+            {{ site.data.contacts.address.value | capitalize }}
+          </span>
         </address>
       </div>
     </div>
@@ -50,7 +52,8 @@
 
   <ul class="Footer-links u-cf">
     {% for link in site.data.footer_links %}
-    <li><a href="{{ link[1].url }}">{{ t[link[1].title] | default: link[1].title | capitalize }}</a></li>
+      {% assign link_name = link[1].title %}
+      <li><a href="{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
     {% endfor %}
   </ul>
 
