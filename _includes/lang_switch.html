@@ -4,10 +4,7 @@
   {% for lang in site.data.l10n limit:2 %}
   <a class="Header-language {% if active_lang == lang[0] %}is-active{% endif %} u-hidden u-md-inlineBlock u-lg-inlineBlock" href="{{ '/' | append: lang[0] }}" title="{{ lang[1].t.desc }}">
     <abbr title="{{ lang[1].name }}">{{ lang[1].code | upcase }}</abbr>
-  </a>
-  {% endfor %}
-
-  <a href="#languages" data-menu-trigger="languages" class="Header-language u-border-none u-zindex-max is-active u-inlineBlock">
+  </a>{% endfor %}<a href="#languages" data-menu-trigger="languages" class="Header-language u-border-none u-zindex-max is-active u-inlineBlock">
     <span class="u-hiddenVisually">{{ t.active_lang }}:</span>
     <span class="u-md-hidden u-lg-hidden">{{ site.data.l10n[active_lang].code | upcase }}</span>
     <span class="Icon Icon-expand u-padding-left-xs u-md-hidden u-lg-hidden"></span>

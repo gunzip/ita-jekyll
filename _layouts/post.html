@@ -29,7 +29,8 @@ layout: default
 
     <div class="u-sizeFull u-md-size11of12 u-lg-size11of12" id="subnav">
 
-      {% include linklist.html items=site.data.subnav %}
+      {% assign subnav = site.data[page.subnav] %}
+      {% include linklist.html items=subnav %}
 
     </div>
   </div>
