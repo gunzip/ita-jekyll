@@ -2,7 +2,7 @@ it:
   code: ita
   name: italiano
   t:
-    desc: sito in italiano
+    lang_on_site: sito in italiano
     active_lang: lingua attiva
     follow_us: seguici su
     cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
@@ -10,11 +10,13 @@ it:
     cookiebar_privacy_policy: Privacy policy
     site_title: Il mio favoloso titolo del sito
     site_subtitle: Il mio favoloso sottotitolo
+    search_form_on: attiva il form di ricerca
+    search_form_off: disattiva il form di ricerca
 en:
   code: eng
   name: english
   t:
-    desc: website in english
+    lang_on_site: website in english
     active_lang: current language
     follow_us: follow us
     cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
@@ -22,3 +24,5 @@ en:
     cookiebar_privacy_policy: Privacy policy
     site_title: My awesome site title
     site_subtitle: My awesome subtitle
+    search_form_on: enter search form
+    search_form_off: exit search form

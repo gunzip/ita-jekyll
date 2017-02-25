@@ -1,7 +1,7 @@
 <div class="Header-languages">
 
   {% for lang in site.data.l10n limit:2 %}
-  <a class="Header-language {% if active_lang == lang[0] %}is-active{% endif %} u-hidden u-md-inlineBlock u-lg-inlineBlock" href="{{ '/' | append: lang[0] }}" title="{{ lang[1].t.desc }}">
+  <a class="Header-language {% if active_lang == lang[0] %}is-active{% endif %} u-hidden u-md-inlineBlock u-lg-inlineBlock" href="{{ '/' | append: lang[0] }}" title="{{ lang[1].t.lang_on_site }}">
     <abbr title="{{ lang[1].name }}">{{ lang[1].code | upcase }}</abbr>
   </a>{% endfor %}<a href="#languages" data-menu-trigger="languages" class="Header-language u-border-none u-zindex-max u-inlineBlock">
     <span class="u-hiddenVisually">{{ t.active_lang }}:</span>
