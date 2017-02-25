@@ -4,40 +4,44 @@
   <div class="u-cf">
     <img class="Footer-logo" src="{{ site.logo }}" alt="">
     <p class="Footer-siteName">
-      {{ site.title | escape }}
+      {{ t.footer_title | default: site.title | escape }}
     </p>
   </div>
 
   <div class="Grid Grid--withGutter">
 
-    <!-- <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-      <h2 class="Footer-blockTitle">Contatti</h2>
-      <div class="Footer-subBlock">
-        <h3 class="Footer-subTitle">Recapiti</h3>
-        <address>
-          Via {{ __WORDS__[i] }}<br>
-          {{ __WORDS__[i] }}<br>
-          Tel. (+00) 00.0000.0000
-        </address>
-      </div>
-    </div> -->
-
     <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-      <h2 class="Footer-blockTitle">Contatti</h2>
+      <h2 class="Footer-blockTitle">{{ t.footer_address | capitalize }}</h2>
       <div class="Footer-subBlock">
-        <h3 class="Footer-subTitle">Indirizzo PEC</h3>
-        <p><a href="">{{ site.author }}</a></p>
-        <p><a href="">{{ site.email }}</a></p>
+        <h3 class="Footer-subTitle">{{ t.footer_address_sub | capitalize }}</h3>
+        <address>
+          {{ site.data.contacts.address.value | capitalize }}
+        </address>
       </div>
     </div>
 
     <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-      <h2 class="Footer-blockTitle">Seguici su</h2>
+      <h2 class="Footer-blockTitle">{{ t.footer_contacts | capitalize }}</h2>
+      <div class="Footer-subBlock">
+        <h3 class="Footer-subTitle">{{ t.footer_contacts_sub | capitalize }}</h3>
+          {% for contact in site.data.contacts. %}
+            {% unless contact[0] == 'address' %}
+            <p class="u-color-grey-20 u-padding-bottom-xs">
+              {{ contact[1].name | capitalize }}: {{ contact[1].value }}
+            </p>
+            {% endunless %}
+          {% endfor %}
+      </div>
+    </div>
+
+    <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+      <h2 class="Footer-blockTitle">{{ t.follow_us | capitalize }}</h2>
       <div class="Footer-subBlock">
         <ul class="Footer-socialIcons">
-          <li><a href=""><span class="Icon Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-          <li><a href=""><span class="Icon Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
-          <li><a href=""><span class="Icon Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
+          {% for social in site.data.social %}
+            <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
+              <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -45,9 +49,9 @@
   </div>
 
   <ul class="Footer-links u-cf">
-    <li><a href="" title="Privacy policy">Privacy</a></li>
-    <li><a href="" title="Note legali">Note legali</a></li>
-    <li><a href="" title="Dati monitoraggio sito">Contatti</a></li>
+    {% for link in site.data.footer_links %}
+    <li><a href="{{ link[1].url }}">{{ t[link[1].title] | default: link[1].title | capitalize }}</a></li>
+    {% endfor %}
   </ul>
 
   </div>

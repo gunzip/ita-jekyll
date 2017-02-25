@@ -7,6 +7,12 @@ it:
     cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
     cookiebar_privacy_policy: Privacy policy
     follow_us: seguici su
+    footer_address: Indirizzo
+    footer_address_sub: ''
+    footer_contacts: Contatti
+    footer_contacts_sub: ''
+    footer_link_privacy_policy: privacy policy
+    footer_link_toc: note legali
     lang_on_site: sito in italiano
     navigation_menu_label: Menu di navigazione
     navigation_menu_esc: esci dalla navigazione
@@ -29,6 +35,12 @@ en:
     cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
     cookiebar_privacy_policy: Privacy policy
     follow_us: follow us
+    footer_address: Address
+    footer_address_sub: ''
+    footer_contacts: Contacts
+    footer_contacts_sub: ''
+    footer_link_privacy_policy: privacy policy
+    footer_link_toc: terms and conditions
     lang_on_site: website in english
     navigation_menu_label: Navigation menu
     navigation_menu_esc: exit navigation
