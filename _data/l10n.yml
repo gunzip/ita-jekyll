@@ -5,6 +5,9 @@ it:
     desc: sito in italiano
     active_lang: lingua attiva
     follow_us: seguici su
+    cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
+    cookiebar_accept: Accetto
+    cookiebar_privacy_policy: Privacy policy
 en:
   code: eng
   name: english
@@ -12,3 +15,6 @@ en:
     desc: website in english
     active_lang: current language
     follow_us: follow us
+    cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
+    cookiebar_accept: Accept
+    cookiebar_privacy_policy: Privacy policy
