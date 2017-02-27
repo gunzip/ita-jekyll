@@ -24,8 +24,8 @@ it:
     site_subtitle: Il mio favoloso sottotitolo
     site_title: Il mio favoloso titolo del sito
     share_msg: condividi
-    skiplinks_goto_content: vai ai contenuti
-    skiplinks_goto_navigation: vai alla navigazione del sito
+    skiplink_goto_content: vai ai contenuti
+    skiplink_goto_navigation: vai alla navigazione del sito
 en:
   code: eng
   name: english
