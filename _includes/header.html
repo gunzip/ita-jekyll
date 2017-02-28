@@ -37,6 +37,7 @@
       </h1>
     </div>
 
+    {% if include.hasSearch %}
     <div class="Header-searchTrigger Grid-cell">
       <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search"
         title="{{ t.search_form_on }}" aria-label="{{ t.search_form_on }}" aria-hidden="false">
@@ -45,6 +46,7 @@
         title="{{ t.search_form_off }}" aria-label="{{ t.search_form_off }}" aria-hidden="true">
       </button>
     </div>
+    {% endif %}
 
     <div class="Header-utils Grid-cell">
       <div class="Header-social Headroom-hideme">
@@ -56,9 +58,11 @@
           {% endfor %}
         </ul>
       </div>
+      {% if include.hasSearch %}
       <div class="Header-search" id="header-search">
         {% include search_form.html %}
       </div>
+      {% endif %}
     </div>
   </div>
   <!-- Header-navbar -->

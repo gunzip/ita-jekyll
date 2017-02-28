@@ -4,7 +4,7 @@
   <div class="u-cf">
     <img class="Footer-logo" src="{{ site.logo }}" alt="">
     <p class="Footer-siteName">
-      {{ t.footer_title | default: t.site_title | default: site.title | escape }}
+      {{ t.footer_title | default: site.owner | default: t.site_title | default: site.title | escape }}
     </p>
   </div>
 
