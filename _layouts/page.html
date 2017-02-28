@@ -5,7 +5,8 @@ layout: default
 {% assign active_lang = page.lang | default: site.lang | default: "en" %}
 {% assign t = site.data.l10n[active_lang].t %}
 
-<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-padding-r-left u-padding-r-right">
+<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-layout-r-withGutter">
+
   <div class="Grid Grid--withGutter">
     <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
 
