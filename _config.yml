@@ -37,14 +37,13 @@ logo: http://designer.italia.it/images/loghi/logo-it.svg
 
 collections:
    pages:
-     output: true
-     permalink: /:path/
-     layout: page
+      output: true
+      permalink: /:title/
+      layout: page
 
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
+  - scope:
+      path: "_pages"
       type: "pages"
     values:
       subnav: "subnav"
