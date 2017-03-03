@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
 Mollit duis anim mollit veniam excepteur sunt eiusmod quis. Cillum ut dolor non esse ea laborum irure ipsum eu voluptate aliqua minim minim. Et elit Lorem dolore ipsum minim adipisicing sunt quis irure enim. Occaecat velit reprehenderit non dolor amet reprehenderit laboris aute. Est sunt velit dolor ad occaecat eu sit mollit duis duis magna aliqua. Mollit anim cupidatat amet dolor consectetur laboris excepteur esse id in sint nulla. Anim mollit aliquip dolore et fugiat sunt sunt aliqua. Cillum magna excepteur dolor sint adipisicing mollit eiusmod magna est elit irure nostrud ea ut veniam pariatur.
