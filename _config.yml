@@ -36,12 +36,6 @@ css_theme: t-Pac
 owner: Governo Italiano
 logo: http://designer.italia.it/images/loghi/logo-it.svg
 
-collections:
-   pages:
-     output: true
-     permalink: /:path/
-     layout: page
-
 defaults:
   -
     scope:
@@ -49,3 +43,4 @@ defaults:
       type: "pages"
     values:
       subnav: "subnav"
+      layout: page
