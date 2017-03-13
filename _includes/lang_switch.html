@@ -11,7 +11,8 @@
     <span class="Icon-drop-down Dropdown-arrow u-color-white"></span>
     <ul class="Linklist">
       {% for lang in site.data.l10n %}
-      <li><a href="{{ '/' | append: lang[0] }}" class="u-padding-r-all"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span></a></li>
+      <li><a href="{{ '/' | append: lang[0] | relative_url }}"
+        class="u-padding-r-all"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span></a></li>
       {% endfor %}
     </ul>
   </div>
