@@ -1,30 +1,63 @@
-- title: Progetti
-  url: '#'
-  subitems:
+it:
   - title: Progetti
-    url: /
+    url: '#'
     subitems:
-    - title: Link 2.1
+    - title: Progetti
       url: /
-    - title: Link 2.2
-      url: /
-    - title: Link 2.3
-      url: /
-- title: Strumenti
-  url: '#'
-  subitems:
+      subitems:
+      - title: Link 2.1
+        url: /
+      - title: Link 2.2
+        url: /
+      - title: Link 2.3
+        url: /
   - title: Strumenti
-    url: /strumenti
+    url: '#'
     subitems:
-    - title: Link 2.1
-      url: /
-    - title: Link 2.2
-      url: /
-    - title: Link 2.3
-      url: /
-- title: Chi siamo
-  url: /chi-siamo
-- title: FAQ
-  url: /faq
-- title: Contatti
-  url: /contatti
+    - title: Strumenti
+      url: it/strumenti
+      subitems:
+      - title: Link 2.1
+        url: /
+      - title: Link 2.2
+        url: /
+      - title: Link 2.3
+        url: /
+  - title: Chi siamo
+    url: it/chi-siamo
+  - title: FAQ
+    url: it/faq
+  - title: Contatti
+    url: it/contatti
+
+en:
+  - title: Projects
+    url: '#'
+    subitems:
+    - title: Projects
+      url: en
+      subitems:
+      - title: Link 2.1
+        url: /
+      - title: Link 2.2
+        url: /
+      - title: Link 2.3
+        url: /
+  - title: Tools
+    url: '#'
+    subitems:
+    - title: Tools
+      url: en/tools
+      subitems:
+      - title: Link 2.1
+        url: /
+      - title: Link 2.2
+        url: /
+      - title: Link 2.3
+        url: /
+  - title: Credits
+    url: en/credits
+  - title: FAQ
+    url: en/faq
+  - title: Contacts
+    url: en/contacts

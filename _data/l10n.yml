@@ -51,6 +51,12 @@ it:
     home_tools_api_title: Sandbox per API
     home_tools_api_subtitle: Gioca direttamente con le API dei progetti, in un ambiente di testing che ti aiuterà ad esplorare e sistemare la tua implementazione.
 
+    menu_item_projects: Progetti
+    menu_item_credits: Chi siamo
+    menu_item_tools: Strumenti
+    menu_item_faq: FAQ
+    menu_item_contacts: Contatti
+
 en:
   code: eng
   name: english
@@ -103,3 +109,9 @@ en:
     home_tools_doc_subtitle: Here you will find the technical documentation of all the projcets, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and RedTheDocs
     home_tools_api_title: API Sandbox
     home_tools_api_subtitle: Play with all the APIs exposed by the projects, in a testing environment that will help you exploring and fixing your implementation.
+
+    menu_item_projects: Projects
+    menu_item_credits: Credits
+    menu_item_tools: Tools
+    menu_item_faq: FAQ
+    menu_item_contacts: Contacts
