@@ -9,7 +9,14 @@
   {% assign navurl = page.url | remove: 'index.html' %}
   {% for item in items %}
   	<li>
-  		<a href="{{ item.url | relative_url }}" {% if item.url == navurl %}class="is-current u-textWeight-700"{% endif %}>
+      
+      {% if item.url == "#" %}
+        {% assign _url = item.url %}
+      {% else %}
+        {% assign _url = item.url | relative_url %}
+      {% endif %}
+
+  		<a href="{{ _url }}" {% if item.url == navurl %}class="is-current u-textWeight-700"{% endif %}>
 				{{ t[item.title] | default: item.title }}
   		</a>
       {% if item.subitems %}
