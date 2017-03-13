@@ -8,7 +8,8 @@
       </a>
     </div>
     <nav>
-			{% include linklist.html dynamic=true items=include.menu_items %}
+			{% assign menu_items = include.menu_items[active_lang]%}
+			{% include linklist.html dynamic=true items=menu_items %}
     </nav>
   </div>
 </section>

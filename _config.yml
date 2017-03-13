@@ -26,6 +26,7 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -33,14 +34,22 @@ exclude:
 # Custom vars
 theme_color: "#0066cc"
 css_theme: t-Pac
-owner: Governo Italiano
+owner: AgID
+owner_desc: Agenzia per l'Italia Digitale
 logo: http://designer.italia.it/images/loghi/logo-it.svg
+owner_logo: https://www.spid.gov.it/assets/img/agid-logo-bb.svg
 
 collections:
    pages:
      output: true
      permalink: /:path/
      layout: page
+   projects:
+     output: true
+     permalink: /:path/
+     layout: project
+   faqs:
+     output: false
 
 defaults:
   -

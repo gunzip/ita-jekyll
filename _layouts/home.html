@@ -3,57 +3,44 @@ layout: default
 lang: it
 ---
 
-{% assign active_lang = page.lang | default: site.lang | default: "en" %}
-{% assign t = site.data.l10n[active_lang].t %}
+{% include setlang.html %}
 
-{{ content }}
+<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+             {{ page.title | capitalize }}</h1>
+  <p class="u-text-r-xs u-padding-r-all u-color-10 u-layout-prose u-layoutCenter u-padding-bottom-xxl u-margin-bottom-xxl">
+    {{ t.home_hero }}
+  </p>
+</div>
 
-{% include hero.html
-  text='Enim enim minim qui irure cillum qui esse enim occaecat in ex in sint voluptate nulla.'
-  category='Category.'
-  title='Irure et consectetur sunt ad ad ullamco ea quis.'
-  button='Call to action'
-%}
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
 
-<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-layout-r-withGutter">
+<hr class="Separator Separator--down u-background-grey-15">
 
-    <ul class="Linklist Linklist--padded">
-      {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+  <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-cf">
 
-    <section class="Grid Grid--withGutterM u-padding-r-all">
-      {% for i in (1..3) %}
-      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+    <div class="js-Masonry-container" style="margin-top: -10em" data-columns>
+
+      {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+
+      {% for project in projects %}
+
+      <div class="Masonry-item js-Masonry-item">
         {% include card.html
-          title='Title'
+          title=project.title
           link='//example.com'
-          subtitle='Subtitle'
-          text='Occaecat sunt fugiat cillum est in cillum dolore ea dolore.'
+          subtitle=project.subtitle
+          text=project.content
+          socials=project.socials
           image='//placehold.it/400x220'
-          alt='Alt text'
-        %}
+          alt=''
+          %}
       </div>
-      {% endfor %}
-    </section>
 
-    <section class="Grid Grid--withGutterM u-padding-r-all">
-      {% for i in (1..3) %}
-      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-        {% include card-gallery.html
-          title='Title'
-          link='//example.com'
-          subtitle='Subtitle'
-          text='Occaecat sunt fugiat cillum est in cillum dolore ea dolore.'
-          image='//placehold.it/400x220'
-          alt='Alt text'
-          icon='camera'
-        %}
-      </div>
       {% endfor %}
-    </section>
+    </div>
 
+  </div>
 </div>

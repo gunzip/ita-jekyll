@@ -2,8 +2,7 @@
 layout: default
 ---
 
-{% assign active_lang = page.lang | default: site.lang | default: "en" %}
-{% assign t = site.data.l10n[active_lang].t %}
+{% include setlang.html %}
 
 <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-layout-r-withGutter">
 
