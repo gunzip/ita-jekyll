@@ -43,6 +43,12 @@ collections:
      output: true
      permalink: /:path/
      layout: page
+   projects:
+     output: true
+     permalink: /:path/
+     layout: project
+   faqs:
+     output: false
 
 defaults:
   -

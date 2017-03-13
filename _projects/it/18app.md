@@ -10,4 +10,13 @@ order: 3
 highlight: yes
 comingsoon: yes
 layout: project
+socials:
+  -
+    name: twitter
+    icon: twitter
+    link: //twitter.com
+  -
+    name: facebook
+    icon: facebook
+    link: //facebook.com
 ---

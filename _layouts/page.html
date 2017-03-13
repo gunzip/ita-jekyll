@@ -4,31 +4,32 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-layout-r-withGutter">
+{% comment %}
 
   {% include breadcrumbs.html %}
+  {% include share.html %}
 
-  <div class="Grid Grid--withGutter">
-    <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
+  {% assign subnav = site.data[page.subnav] %}
+  {% include linklist.html items=subnav dynamic=true %}
 
-      <article class="Prose u-layout-prose">
-        <h1>{{ page.title | escape }}</h1> {{ content }}
-      </article>
+{% endcomment %}
+
+<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+    {{ page.title }}</h1>
+</div>
+
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
+
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+  <div class="Grid">
+
+    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+
+      {{ content }}
 
     </div>
 
-    <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12">
-      <div class="u-cf u-padding-bottom-xxl">
-        {% include share.html %}
-      </div>
-
-      <div class="u-sizeFull u-md-size11of12 u-lg-size11of12" id="subnav">
-
-        {% assign subnav = site.data[page.subnav] %}
-        {% include linklist.html items=subnav dynamic=true %}
-
-      </div>
-    </div>
   </div>
-
 </div>

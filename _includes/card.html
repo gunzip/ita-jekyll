@@ -17,22 +17,21 @@
       <div class="Grid u-padding-r-top u-margin-r-top">
 
         <p class="u-layout-centerLeft u-padding-r-bottom">
-          <a href="#" class="u-color-50 u-text-r-xs u-textWeight-600 u-textClean">per saperne di più
+          <a href="{{ include.link }}" class="u-color-50 u-text-r-xs u-textWeight-600 u-textClean">{{ t.home_projects_expand }}
           <span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-md-hidden u-sm-hidden"></span>
         </a>
         </p>
         <br class="u-sm-hidden u-md-hidden u-lg-hidden">
         <p class="u-layout-centerRight u-padding-r-bottom">
 
-          <a href="#" class="u-linkClean">
-            <span class="Icon Icon-twitter u-inlineBlock u-text-r-xs u-padding-all-xxs u-borderRadius-circle
-            u-background-50 u-color-white u-margin-right-xs"></span><span class="u-hiddenVisually">twitter</span></a>
-          <a href="#" class="u-linkClean">
-            <span class="Icon Icon-twitter u-inlineBlock u-text-r-xs u-padding-all-xxs u-borderRadius-circle
-            u-background-50 u-color-white u-margin-right-xs"></span><span class="u-hiddenVisually">twitter</span></a>
-          <a href="#" class="u-linkClean">
-            <span class="Icon Icon-twitter u-inlineBlock u-text-r-xs u-padding-all-xxs u-borderRadius-circle
-            u-background-50 u-color-white u-margin-right-xs"></span><span class="u-hiddenVisually">twitter</span></a>
+          {% for social in include.socials %}
+
+          <a href="{{ social.link }}" class="u-linkClean">
+            <span class="Icon Icon-{{ social.icon }} u-inlineBlock u-text-r-xs u-padding-all-xxs u-borderRadius-circle
+            u-background-50 u-color-white u-margin-right-xs"></span><span class="u-hiddenVisually">{{ social.name }}</span></a>
+
+          {% endfor %}
+
         </p>
 
       </div>
