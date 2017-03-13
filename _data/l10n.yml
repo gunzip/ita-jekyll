@@ -26,6 +26,7 @@ it:
     share_msg: condividi
     skiplink_goto_content: vai ai contenuti
     skiplink_goto_navigation: vai alla navigazione del sito
+    toggle_menu_label: accedi al menu
 en:
   code: eng
   name: english
@@ -54,3 +55,4 @@ en:
     share_msg: share
     skiplinks_goto_content: go to content
     skiplinks_goto_navigation: go to site navigation
+    toggle_menu_label: go to navigation
